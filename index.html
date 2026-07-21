@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Afnan - Portfolio</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== LOADING SCREEN ========== -->
+    <div id="preloader">
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#home" class="logo">
+            <span class="logo-dot">Afnan</span>
+          </a>
+
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+              <i class="fas fa-moon"></i>
+            </button>
+            <a href="#contact" class="btn btn-primary btn-sm">Resume</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+            <span class="hero-greeting">👋 Hello, I'm</span>
+            <h1 class="hero-title">
+              Muhammad Afnan<br />
+              <span class="hero-title-highlight" id="typingText"></span>
+            </h1>
+            <p class="hero-description">Programmer lihai dalam Java & Web App dengan rasa ingin tahu tinggi terhadap teknologi dan pemrograman.</p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary"> <i class="fas fa-paper-plane"></i> Contact Me </a>
+            </div>
+            <div class="hero-social">
+              <a href="https://github.com/afnan1211" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammadafnanzainalmutaqin" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.instagram.com/afnan.zai?igsh=bG40ZWxzNzhtYnhx" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="mailto:Afnanzainall47@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+            <div class="hero-image-wrapper">
+              <div class="hero-image-placeholder">
+                <img src="assets/images/profile.jpg" alt="Muhammad Afnan" />
+              </div>
+              <div class="hero-image-ring"></div>
+              <div class="hero-image-ring-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-shapes">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+      </div>
+    </section>
+
+    <!-- ========== STATISTICS ========== -->
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Who I Am</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+
+        <div class="about-wrapper">
+          <div class="about-content" data-aos="fade-right">
+            <p class="about-text">
+              Saya lulusan perguruan tinggi Universitas Muhammadiyah Surakarta dengan gelar di bidang teknik informatika. Saya sangat menguasai tentang IT dan pemrograman. Saya seorang programmer yang lihai dan terampil dalam Java serta
+              Aplikasi web.
+            </p>
+            <p class="about-text">Dengan rasa ingin tahu yang tinggi, saya suka mempelajari hal-hal baru terutama dalam bidang IT dan pemrograman.</p>
+            <div class="about-info">
+              <div class="about-info-item">
+                <span class="label">Name</span>
+                <span class="value">Muhammad Afnan Zainal Mutaqin</span>
+              </div>
+              <div class="about-info-item">
+                <span class="label">Email</span>
+                <span class="value">Afnanzainall47@gmail.com</span>
+              </div>
+              <div class="about-info-item">
+                <span class="label">Phone</span>
+                <span class="value">0878-3206-6107</span>
+              </div>
+              <div class="about-info-item">
+                <span class="label">Location</span>
+                <span class="value">Surakarta, Indonesia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-skills" data-aos="fade-left">
+            <h3 class="skills-title">My Skills</h3>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>CSS</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>JavaScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>React</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Java</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Experience</span>
+          <h2 class="section-title">My Journey</h2>
+          <p class="section-subtitle">Where I've worked and what I've done</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2025 - Present</span>
+              <h3 class="timeline-title">Staff Pelatih Brass</h3>
+              <p class="timeline-company">Crown Boarding School</p>
+              <ul class="timeline-description">
+                <li>Melatih klien dalam bidang Brass</li>
+                <li>Menyiapkan Partitur</li>
+                <li>Berkoordinasi dengan rekan sejawat</li>
+                <li>Menyiapkan klien untuk berpartisipasi dalam event kejuaraan</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2023</span>
+              <h3 class="timeline-title">Analis Saham</h3>
+              <p class="timeline-company">FRIST STATE FUTURE</p>
+              <ul class="timeline-description">
+                <li>Melakukan Visite Klien</li>
+                <li>Menganalisa algoritma saham</li>
+                <li>Membaca peluang yang ada pada klien</li>
+                <li>Mengajak Klien untuk berpartisipasi dalam saham</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2018</span>
+              <h3 class="timeline-title">Network Engineer</h3>
+              <p class="timeline-company">PT GMEDIA SARANA DATA</p>
+              <ul class="timeline-description">
+                <li>Membantu dalam menginstalasi jaringan internet</li>
+                <li>Membantu memantau kinerja internet</li>
+                <li>Melakukan pemeliharaan rutin jaringan</li>
+                <li>Melakukan Visite ke klien</li>
+                <li>Briefing rutin dan koordinasi tim</li>
+                <li>Berpartisipasi dalam kegiatan luar kantor dan Event</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2023 - 2024</span>
+              <h3 class="timeline-title">Pelatih Marching Band</h3>
+              <p class="timeline-company">UKM Marching Band UMS</p>
+              <ul class="timeline-description">
+                <li>Melatih anggota Marching Band</li>
+                <li>Menyiapkan koreografi dan partitur</li>
+                <li>Berkoordinasi dengan tim pelatih</li>
+                <li>Mempersiapkan anggota untuk event kejuaraan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">Tech Stack</h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="0">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <span class="skill-name">HTML</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="50">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <span class="skill-name">CSS</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+            <div class="skill-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <span class="skill-name">React</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="skill-icon">
+              <i class="fab fa-laravel"></i>
+            </div>
+            <span class="skill-name">Laravel</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+            <div class="skill-icon">
+              <i class="fab fa-php"></i>
+            </div>
+            <span class="skill-name">PHP</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="skill-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <span class="skill-name">Python</span>
+          </div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+            <div class="skill-icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <span class="skill-name">Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PORTFOLIO SECTION ========== -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="portfolio-image">
+              <div class="portfolio-placeholder">
+                <div class="portfolio-image">
+                    <img src="assets/images/project1.jpg" alt="Project 1" class="portfolio-img" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Web App Development</h3>
+              <p class="portfolio-tech">JavaScript, Laravel, MySQL</p>
+              <div class="portfolio-links">
+                <a href="#" class="btn btn-primary btn-sm"> <i class="fas fa-eye"></i> Demo </a>
+                <a href="#" class="btn btn-outline btn-sm"> <i class="fab fa-github"></i> Github </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Let's Talk</h3>
+            <p>Feel free to reach out for collaborations or just a friendly chat</p>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">0878-3206-6107</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">Afnanzainall47@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Surakarta, Indonesia</span>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a href="https://github.com/afnan1211" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/muhammadafnanzainalmutaqin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/afnan.zai?igsh=bG40ZWxzNzhtYnhx" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:Afnanzainall47@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" data-aos="fade-left">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Send Message</button>
+            <div class="form-message" id="formMessage"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://github.com/afnan1211"" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muhammadafnanzainalmutaqin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/afnan.zai?igsh=bG40ZWxzNzhtYnhx" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:Afnanzainall47@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+          <p class="footer-copy">&copy; 2025 Muhammad Afnan Zainal Mutaqin. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
