@@ -208,7 +208,7 @@ skillBars.forEach((bar) => skillObserver.observe(bar));
 // ========================================
 // 8. CONTACT FORM VALIDATION
 // ========================================
-const form = document.getElementById("contact-form");
+const contactform = document.getElementById("contact-form");
 
 contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
