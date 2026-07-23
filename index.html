@@ -396,32 +396,38 @@ emailjs.init({
               <a href="mailto:Afnanzainall47@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
-        <form id="contact-form">
-
-<input type="text"
-id="name"
-name="name"
-placeholder="Nama">
-
-<input type="email"
-id="email"
-name="email"
-placeholder="Email">
-
-<input type="text"
-id="subject"
-name="subject"
-placeholder="Subject">
-
-<textarea
-id="message"
-name="message"></textarea>
-
-<button type="submit">
-Kirim
-</button>
-
-</form>
+           <form id="contact-form" class="contact-form">
+              <input
+                  type="text"
+                  name="name"
+                  placeholder="Nama"
+                  required
+              >
+          
+              <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+              >
+          
+              <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subjek"
+                  required
+              >
+          
+              <textarea
+                  name="message"
+                  placeholder="Tulis pesan..."
+                  required
+              ></textarea>
+          
+              <button type="submit">
+                  Kirim Pesan
+              </button>
+          </form>
         </div>
       </div>
     </section>
