@@ -219,37 +219,33 @@ contactForm.addEventListener('submit', (e) => {
   const email = document.getElementById('email').value.trim();
   const subject = document.getElementById('subject').value.trim();
   const message = document.getElementById('message').value.trim();
+  const form = document.getElementById("contact-form");
 
-  // Validate
-  if (!name || !email || !subject || !message) {
-    showFormMessage('Semua field harus diisi!', 'error');
-    return;
-  }
+form.addEventListener("submit", function (e) {
 
-  if (!isValidEmail(email)) {
-    showFormMessage('Email tidak valid!', 'error');
-    return;
-  }
+    e.preventDefault();
 
-  // Success
-  showFormMessage('Pesan berhasil dikirim! Terima kasih 🙌', 'success');
-  contactForm.reset();
+    emailjs.sendForm(
+        "service_afn1211",
+        "template_afn1211",
+        this
+    )
+    .then(() => {
+
+        alert("Pesan berhasil dikirim!");
+
+        form.reset();
+
+    })
+    .catch((error) => {
+
+        console.log(error);
+
+        alert("Pesan gagal dikirim!");
+
+    });
+
 });
-
-function isValidEmail(email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
-function showFormMessage(msg, type) {
-  formMessage.textContent = msg;
-  formMessage.className = `form-message ${type}`;
-  formMessage.style.display = 'block';
-
-  setTimeout(() => {
-    formMessage.style.display = 'none';
-  }, 5000);
-}
-
 // ========================================
 // 9. SMOOTH SCROLL (optional enhancement)
 // ========================================
