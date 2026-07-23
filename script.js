@@ -226,8 +226,8 @@ form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     emailjs.sendForm(
-        "service_afn1211",
-        "template_afn1211",
+        "service_hte9hbm",
+        "template_i9e80y4",
         this
     )
     .then(() => {
