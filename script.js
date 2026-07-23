@@ -210,8 +210,7 @@ skillBars.forEach((bar) => skillObserver.observe(bar));
 // ========================================
 const form = document.getElementById("contact-form");
 
-form.addEventListener("submit", function (e) {
-
+contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
     emailjs.sendForm(
